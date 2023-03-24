@@ -1,20 +1,26 @@
-import About from './components/About';
-import Contact from './components/Contact';
-import Experience from './components/Experience';
-import Skills from './components/Skills';
-import Navbar from './components/Navbar';
-import AnimTitle from './components/AnimTitle';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Experience from './components/Experience/Experience';
+import Skills from './components/Skills/Skills';
+import Navbar from './components/Navbar/Navbar';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 
-function App() {
+const App = () => {
   return (
-    <div className="h-[100vh] bg-maincolor pt-10">
-    {/* <AnimTitle/>
-    <About />
-    <Contact />
-    <Experience />
-    <Skills /> */}
-    <Navbar />
+    <div
+      className="
+    bg-gradient-to-r from-darkcolor via-maincolor to-maincolor
+    p-10 ">
+
+      <Header />
+      <Navbar />
+      <About />
+      <Skills />
+      <Experience />
+      <Contact />
+      <Footer />
     </div>
   );
 }

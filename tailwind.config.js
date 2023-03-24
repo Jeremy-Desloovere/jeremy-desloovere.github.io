@@ -4,28 +4,17 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-    fontFamily:{
-      primary:'Gudea',
-      secondary:'sans-serif',
-    },
-    container:{
-      padding: {
-        DEFAULT: '15px',
-      },
-    },
-    screens:{
-      sm:'640px',
-      md:'768px',
-      lg:'960px',
-      xl:'1200px',
+    fontFamily: {
+      primary: 'Gudea',
+      secondary: 'sans-serif',
     },
     extend: {
-      colors:{
-        maincolor:'#3c7b8f',
-        lightcolor:'#9DBDC7',
-        darkcolor:'#1E3D47',
-        verydarkcolor:'#12242A',
-        inverse:'#C38470',
+      colors: {
+        lightcolor: '#9DBDC7',
+        maincolor: '#3c7b8f',
+        darkcolor: '#1E3D47',
+        verydarkcolor: '#12242A',
+        inverse: '#C38470',
       },
     },
   },

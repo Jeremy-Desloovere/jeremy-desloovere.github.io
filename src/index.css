@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+section{
+    @apply  py-8 lg:py-24 lg:h-screen flex items-center;
+}
+
+.active{
+    @apply rounded-full bg-gradient-to-t from-verydarkcolor via-darkcolor to-transparent
+}

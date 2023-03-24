@@ -5,6 +5,7 @@ import Skills from './components/Skills/Skills';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Banner from './components/Banner/Banner';
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
     p-10 ">
 
       <Header />
+      <Banner />
       <Navbar />
       <About />
       <Skills />

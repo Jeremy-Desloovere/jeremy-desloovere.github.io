@@ -2,10 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-section{
-    @apply  py-8 lg:py-24 lg:h-screen flex items-center;
-}
 
 .active{
     @apply rounded-full bg-gradient-to-t from-verydarkcolor via-darkcolor to-transparent
+}
+
+	
+.text-anim{
+    display: block;
+    height: 85px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+	background: linear-gradient(to right,  #12242A , #1E3D47 );
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+@layer base {
+  body {
+    @apply font-primary text-lg leading-8 text-yellow-50;
+  }
+  .btn {
+    @apply rounded-full font-primary text-white font-medium;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  section{
+    @apply  py-8 lg:py-24 lg:h-screen md:flex items-center;
+}
+
 }

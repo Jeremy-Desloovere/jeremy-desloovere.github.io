@@ -19,6 +19,6 @@ module.exports = {
     },
   },
   plugins: [
-    require("tailwindcss-text-fill"),
+    // require("tailwindcss-text-fill"),
   ],
 };

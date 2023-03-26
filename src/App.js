@@ -11,9 +11,10 @@ import Banner from './components/Banner/Banner';
 const App = () => {
   return (
     <div
+
       className="
     bg-gradient-to-r from-darkcolor via-maincolor to-maincolor
-    p-10 ">
+    p-5 md:p-6 lg:p-12 xl:pl-24 ">
 
       <Header />
       <Banner />

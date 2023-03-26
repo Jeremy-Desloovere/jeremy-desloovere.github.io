@@ -7,15 +7,14 @@
     @apply rounded-full bg-gradient-to-t from-verydarkcolor via-darkcolor to-transparent
 }
 
+
 	
 .text-anim{
     display: block;
-    height: 85px;
     text-transform: uppercase;
-    font-size: 1.5em;
-	background: linear-gradient(to right,  #12242A , #1E3D47 );
+	  background: linear-gradient(to right,  #12242A , #1E3D47 );
     -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	  -webkit-text-fill-color: transparent;
 }
 
 
@@ -24,19 +23,17 @@
     @apply font-primary text-lg leading-8 text-yellow-50;
   }
   .btn {
-    @apply rounded-full font-primary text-white font-medium;
+    @apply rounded-full bg-gradient-to-t from-verydarkcolor via-darkcolor to-transparent px-3
+    h-2/6
   }
-  .btn-sm {
-    @apply h-[48px] px-6 text-sm;
+  h1 {
+    @apply  text-[24px] mb-6  uppercase text-verydarkcolor font-bold;
   }
-  .btn-lg {
-    @apply h-[56px] px-10 text-base;
+  h2 {
+    @apply  text-[32px] mb-6  uppercase text-verydarkcolor font-bold;
   }
-  .btn-link {
-    @apply text-base;
-  }
-  section{
-    @apply  py-8 lg:py-24 lg:h-screen md:flex items-center;
+   section{
+    @apply  py-9 lg:py-0 lg:h-screen md:flex items-center;
 }
 
 }

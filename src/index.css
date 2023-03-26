@@ -30,7 +30,7 @@
     @apply  text-[24px] mb-6  uppercase text-verydarkcolor font-bold;
   }
   h2 {
-    @apply  text-[32px] mb-6  uppercase text-verydarkcolor font-bold;
+    @apply  text-[32px]  lg:text-[45px] mb-6  uppercase text-verydarkcolor font-bold;
   }
    section{
     @apply  py-9 lg:py-0 lg:h-screen md:flex items-center;

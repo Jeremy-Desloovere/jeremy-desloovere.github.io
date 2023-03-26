@@ -4,7 +4,7 @@ const Skills = () => {
         <div
             id='skills'
         >
-            Skills
+            <h2> Skills</h2>
         </div>
     )
 };

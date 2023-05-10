@@ -20,20 +20,20 @@
 
 @layer base {
   body {
-    @apply font-primary text-lg leading-8 text-yellow-50;
+    @apply font-primary text-lg leading-8 text-yellow-50	;
   }
   .btn {
-    @apply rounded-full bg-gradient-to-t from-verydarkcolor via-darkcolor to-transparent px-3
-    h-2/6
+    @apply rounded-full bg-gradient-to-t from-verydarkcolor via-darkcolor to-transparent p-2
+    h-1/2
   }
   h1 {
-    @apply  text-[24px] mb-6  uppercase text-verydarkcolor font-bold;
+    @apply w-min max-[410px]:text-[20px] text-[24px]  lg:text-[35px]  mb-6  uppercase text-verydarkcolor font-bold;
   }
   h2 {
-    @apply  text-[32px]  lg:text-[45px] mb-6  uppercase text-verydarkcolor font-bold;
+    @apply  text-4xl   mb-6    text-verydarkcolor font-bold;
   }
    section{
-    @apply  py-9 lg:py-0 lg:h-screen md:flex items-center;
+    @apply  py-8 lg:py-0 md:mb-8 lg:h-screen md:flex items-center;
 }
 
 }

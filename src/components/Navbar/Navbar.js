@@ -8,8 +8,8 @@ import { Link } from 'react-scroll';
 
 const Navbar = () => {
     return (
-        <nav className='fixed bottom-2 lg:bottom-8 w-full overflow-hidden z-50'>
-            <div className='container mx-auto'>
+        <nav className='fixed bottom-2 lg:bottom-8 w-full z-50'>
+            <div className=' mx-auto'>
                 <div className='w-full bg-black/20 h-[80px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex justify-between  items-center text-2x1 text-white/50'>
                     <Link to='home'
                         activeClass='active'

@@ -3,10 +3,10 @@ import { FiTwitter, FiGithub, FiLinkedin } from "react-icons/fi";
 
 
 const Social = () => {
-    let circleClasses = "p-2 rounded-full opacity-60 hover:opacity-100 ";
+    let circleClasses = "p-3  rounded-full opacity-80  transition ease-in-out  hover:-translate-y-1 hover:scale-125 duration-500 ";
 
     return (
-        <div className="flex justify-around items-center w-full md:w-3/5">
+        <div className="flex justify-around items-center w-full md:w-3/5 md:h-20">
             <a
                 href="https://www.linkedin.com/in/jeremy-desloovere/"
                 style={{ background: "#3B5998" }} className={circleClasses}>

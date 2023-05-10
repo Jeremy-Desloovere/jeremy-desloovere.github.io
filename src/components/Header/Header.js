@@ -14,7 +14,7 @@ const Header = () => {
             <div
                 className="max-[410px]:flex justify-center">
                 <Link
-                    className="btn  mr-3 "
+                    className="btn  mr-3  "
                     href={CV}
                     download="CVJeremyDesloovere">
                     CV <BiDownload
@@ -23,7 +23,7 @@ const Header = () => {
 
                 </Link>
                 <Link
-                    className="btn "
+                    className="btn cursor-pointer "
                     to='contact'>
                     Contact
                 </Link>

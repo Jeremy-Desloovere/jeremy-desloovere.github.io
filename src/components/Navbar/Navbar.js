@@ -2,6 +2,8 @@ import React from 'react';
 
 import { BiHomeAlt, BiUser } from 'react-icons/bi';
 import { BsClipboardData, BsChatSquareText } from 'react-icons/bs';
+
+import { TbNotebook } from 'react-icons/tb';
 import { SiAboutdotme } from 'react-icons/si';
 
 import { Link } from 'react-scroll';
@@ -44,7 +46,7 @@ const Navbar = () => {
                         smooth={true}
                         spy={true}
                         className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
-                        <BiUser
+                        <TbNotebook
                             size={20}
                         />
                     </Link>

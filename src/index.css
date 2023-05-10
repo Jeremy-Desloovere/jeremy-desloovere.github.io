@@ -30,10 +30,10 @@
     @apply w-min max-[410px]:text-[20px] text-[24px]  lg:text-[35px]  mb-6  uppercase text-verydarkcolor font-bold;
   }
   h2 {
-    @apply  text-4xl   mb-6    text-verydarkcolor font-bold;
+    @apply  text-4xl   mb-8    text-verydarkcolor font-bold;
   }
    section{
-    @apply  py-8 lg:py-0 md:mb-8 lg:h-screen md:flex items-center;
+    @apply  py-8 lg:py-0 md:mb-16  md:flex items-center;
 }
 
 }

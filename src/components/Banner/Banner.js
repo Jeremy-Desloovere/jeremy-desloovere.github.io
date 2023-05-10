@@ -10,7 +10,7 @@ const Banner = () => {
   return (
 
     <section id='home '
-      className="relative" >
+      className="relative lg:h-screen" >
       <div className=" flex flex-col items-center   md:w-3/4 ld:w-1/2  mx-auto font-bold text-2xl md:text-6xl ">
         <img src={tache} className="md:w-3/4 absolute z-1  md:top-3.5	lg:top-32 -top-5 left-3 md:-left-2 lg:-left-4" alt="tache" />
         <span className="z-50 md:text-4xl xl:text-5xl px-16 md:mb-3"

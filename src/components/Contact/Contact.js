@@ -1,6 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import { Typography, Modal, Box } from '@mui/material';
+
+
+
 
 
 
@@ -29,8 +33,20 @@ const pathVariants = {
 }
 
 const Contact = () => {
-
     const form = useRef();
+    const [showModal, setShowModal] = useState(false);
+
+
+    useEffect(() => {
+        if (showModal) {
+            setTimeout(() => {
+                setShowModal(false);
+                form.current.reset();
+            }, 3000);
+        }
+    });
+
+
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
@@ -47,7 +63,11 @@ const Contact = () => {
 
     const handleReset = (evt) => {
         evt.preventDefault();
-        form.current.reset()
+        form.current.reset();
+    }
+    const handleOpen = (evt) => {
+        evt.preventDefault();
+        setShowModal(true)
     }
 
     return <section
@@ -115,6 +135,7 @@ const Contact = () => {
                 type='text'
                 placeholder='Email'
                 name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             />
             <textarea
                 className='bg-transparent border-b pb-16 outline-none w-full
@@ -124,7 +145,8 @@ const Contact = () => {
             <div
                 className='self-center'>
                 <button
-                    className="btn mr-8">
+                    className="btn mr-8"
+                    onClick={handleOpen}>
                     Envoyer
                 </button>
                 <button
@@ -137,10 +159,22 @@ const Contact = () => {
         </form>
 
 
+        <Modal
+            open={showModal}
+            aria-describedby="modal-modal-description"
+        >
+            <Box >
+                <Typography
+                    className='modal'
+                    id="modal-modal-description">
+                    Votre message a bien été envoyé.
+                </Typography>
+            </Box>
+        </Modal>
+
 
     </section>
 
 };
 export default Contact;
-
 

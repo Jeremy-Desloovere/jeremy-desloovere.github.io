@@ -9,17 +9,20 @@ const Social = () => {
         <div className="flex justify-around items-center w-full md:w-3/5 md:h-20">
             <a
                 href="https://www.linkedin.com/in/jeremy-desloovere/"
-                style={{ background: "#3B5998" }} className={circleClasses}>
+                target="_blank"
+                style={{ background: "#3B5998" }} className={circleClasses} rel="noreferrer">
                 <FiLinkedin />
             </a>
             <a
                 href="https://github.com/Jeremy-Desloovere/"
-                style={{ background: "#000" }} className={circleClasses}>
+                target="_blank"
+                style={{ background: "#000" }} className={circleClasses} rel="noreferrer">
                 <FiGithub />
             </a>
             <a
                 href="https://twitter.com/JeremDesloovere"
-                style={{ background: "#1DA1F2" }} className={circleClasses}>
+                target="_blank"
+                style={{ background: "#1DA1F2" }} className={circleClasses} rel="noreferrer">
                 <FiTwitter />
             </a>
         </div>

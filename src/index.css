@@ -36,4 +36,8 @@
     @apply  py-8 lg:py-0 md:mb-16  md:flex items-center;
 }
 
+.modal{ 
+  @apply absolute  w-2/4 border-2 bg-verydarkcolor p-3 
+}
+
 }

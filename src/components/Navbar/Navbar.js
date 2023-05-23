@@ -41,7 +41,7 @@ const Navbar = () => {
                             size={20}
                         />
                     </Link>
-                    <Link to='experience'
+                    <Link to='portfolio'
                         activeClass='active'
                         smooth={true}
                         spy={true}

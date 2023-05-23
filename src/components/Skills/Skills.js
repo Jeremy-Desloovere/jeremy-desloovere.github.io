@@ -14,7 +14,8 @@ import mysql from '../../assets/skills/mysql.png'
 
 const Skills = () => {
     return (
-        <section className="flex-col md:items-start">
+        <section className="flex-col md:items-start"
+            id='skills'>
             <h2>
                 Skills
             </h2>

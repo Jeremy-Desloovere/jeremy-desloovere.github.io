@@ -51,16 +51,13 @@ const Contact = () => {
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
-        console.log("test")
         emailjs.sendForm('service_58ejm9j', 'template_067s7vy', form.current, '1FRgprCn7Y5RgeGQN').then(
             (result) => {
-                console.log(result.text);
                 setSeverity("success");
                 setMessage(result.text)
             },
             (error) => {
                 console.log(error.text);
-                setSeverity("error");
                 setMessage(error.text)
 
             },

@@ -11,14 +11,13 @@ import Banner from './components/Banner/Banner';
 const App = () => {
   return (
     <div
-
       className="
     bg-gradient-to-r from-darkcolor via-maincolor to-maincolor
-    p-5 md:p-6 lg:p-12 xl:pl-24 ">
+     p-5 md:p-6 lg:p-12 flex items-center justify-center flex-col">
 
+      <Navbar />
       <Header />
       <Banner />
-      <Navbar />
       <About />
       <Skills />
       <Portfolio />

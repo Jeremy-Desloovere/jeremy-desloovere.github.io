@@ -24,7 +24,7 @@
   }
   .btn {
     @apply rounded-full bg-gradient-to-t from-verydarkcolor via-darkcolor to-transparent p-2
-    h-1/2
+    
   }
   h1 {
     @apply w-min max-[410px]:text-[20px] text-[24px]  lg:text-[35px]  mb-6  uppercase text-verydarkcolor font-bold;
@@ -33,7 +33,7 @@
     @apply  text-4xl   mb-8    text-verydarkcolor font-bold;
   }
    section{
-    @apply  py-8 lg:py-0 md:mb-16  md:flex items-center;
+    @apply w-full my-12 md:my-20 lg:my-24 ;
 }
 
 .modal{ 

@@ -9,22 +9,22 @@ const Header = () => {
 
     return (
         <header
-            className='mb-2 lg:mb-0  max-[320px]:mb-8 flex justify-between  '
+            className='mb-2 lg:mb-0  max-[320px]:mb-8 flex justify-between w-full  '
             id='home'>
             <h1>Jeremy Desloovere</h1>
             <div
                 className="max-[410px]:flex justify-center">
-                <Link
-                    className="btn  mr-3  "
-                    to={CV}
-                    download="CVJeremyDesloovere">
+                <a
+                    className="btn  mr-3 h-1/2   "
+                    href={CV}
+                    download="CV_Jeremy_Desloovere.pdf">
                     CV <BiDownload
                         className="inline"
                     />
 
-                </Link>
+                </a>
                 <Link
-                    className="btn cursor-pointer "
+                    className="btn cursor-pointer h-1/2 "
                     to='contact'>
                     Contact
                 </Link>

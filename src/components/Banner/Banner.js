@@ -9,12 +9,12 @@ const Banner = () => {
 
   return (
 
-    <section id='home '
-      className="relative lg:h-screen" >
-      <div className=" flex flex-col items-center   md:w-3/4 ld:w-1/2  mx-auto font-bold text-2xl md:text-6xl ">
-        <img src={tache} className="md:w-3/4 absolute z-1  md:top-3.5	lg:top-32 -top-5 left-3 md:-left-2 lg:-left-4" alt="tache" />
-        <span className="z-50 md:text-4xl xl:text-5xl px-16 md:mb-3"
-        >I am a </span>
+    <section
+      className="md:flex" >
+      <div className="relative flex flex-col items-center   md:w-3/4 ld:w-1/2  mx-auto font-bold text-2xl md:text-6xl ">
+        <img src={tache} className="" alt="tache" />
+        <span className=" absolute top-[35%]  left-[40%] text-3xl z-50 md:text-4xl xl:text-5xl "
+        >I am a</span>
         <TypeAnimation
           sequence={[
             'frontend developer',
@@ -25,7 +25,7 @@ const Banner = () => {
             3000,
           ]}
           speed={25}
-          className="z-50 h-7 md:h-20  md:text-3xl xl:text-5xl uppercase  font-bold"
+          className="absolute top-[50%] z-50 text-2xl md:text-3xl xl:text-5xl uppercase  font-bold"
           wrapper="span"
           repeat={Infinity}
         />
@@ -44,3 +44,4 @@ const Banner = () => {
 }
 
 export default Banner;
+// md: w - 3 / 4 absolute   md: top - 3.5	lg: top - 32 - top - 5 left - 3 md: -left - 2 lg: -left - 4

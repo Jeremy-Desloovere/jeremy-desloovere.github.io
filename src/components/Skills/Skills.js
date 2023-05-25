@@ -14,13 +14,13 @@ import mysql from '../../assets/skills/mysql.png'
 
 const Skills = () => {
     return (
-        <section className="flex-col md:items-start"
+        <section
             id='skills'>
             <h2>
                 Skills
             </h2>
             <div
-                id='skills'
+
                 className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0'
             >
                 <div className='shadow-md hover:scale-105 duration-500 py-2 rounded-lg'>

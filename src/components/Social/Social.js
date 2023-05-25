@@ -3,7 +3,7 @@ import { FiTwitter, FiGithub, FiLinkedin } from "react-icons/fi";
 
 
 const Social = () => {
-    let circleClasses = "p-3  rounded-full opacity-80  transition ease-in-out  hover:-translate-y-1 hover:scale-125 duration-500 ";
+    let circleClasses = "p-3  rounded-full opacity-80  transition ease-in-out  hover:-translate-y-1 hover:scale-150 duration-500 ";
 
     return (
         <div className="flex justify-around items-center w-full md:w-3/5 md:h-20">

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import { Typography, Modal, Box } from '@mui/material';
+import { Alert } from '@mui/material';
 
 
 
@@ -34,13 +34,14 @@ const pathVariants = {
 
 const Contact = () => {
     const form = useRef();
-    const [showModal, setShowModal] = useState(false);
+    const [message, setMessage] = useState("");
+    const [severity, setSeverity] = useState("");
 
 
     useEffect(() => {
-        if (showModal) {
+        if (message) {
             setTimeout(() => {
-                setShowModal(false);
+                setMessage("");
                 form.current.reset();
             }, 3000);
         }
@@ -50,13 +51,18 @@ const Contact = () => {
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
-
+        console.log("test")
         emailjs.sendForm('service_58ejm9j', 'template_067s7vy', form.current, '1FRgprCn7Y5RgeGQN').then(
             (result) => {
                 console.log(result.text);
+                setSeverity("success");
+                setMessage(result.text)
             },
             (error) => {
                 console.log(error.text);
+                setSeverity("error");
+                setMessage(error.text)
+
             },
         );
     }
@@ -65,16 +71,12 @@ const Contact = () => {
         evt.preventDefault();
         form.current.reset();
     }
-    const handleOpen = (evt) => {
-        evt.preventDefault();
-        setShowModal(true)
-    }
 
     return <section
         id='contact'
-        className="flex-col md:flex-row md:items-start"
-    >
+        className="md:flex">
         <h2
+
             className="md:w-1/3">
             Me contacter
         </h2>
@@ -121,6 +123,7 @@ const Contact = () => {
                 type='text'
                 placeholder='Nom'
                 name="nom"
+                required
             />
             <input
                 className='bg-transparent border-b py-3 outline-none w-full
@@ -128,6 +131,7 @@ const Contact = () => {
                 type='text'
                 placeholder='Prénom'
                 name="prenom"
+                required
             />
             <input
                 className='bg-transparent border-b py-3 outline-none w-full
@@ -136,17 +140,30 @@ const Contact = () => {
                 placeholder='Email'
                 name="email"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
             />
             <textarea
                 className='bg-transparent border-b pb-16 outline-none w-full
                 placeholder:text-white focus:border-emerald-900 transition-all resize-none mb-3'
                 placeholder='Message'
-                name="message"></textarea>
+                name="message"
+                required
+            ></textarea>
             <div
                 className='self-center'>
+
+                {!!message &&
+                    <Alert
+                        severity={severity}
+                        aria-describedby="alert message"
+                    >
+                        {message}
+                    </Alert>
+
+                }
                 <button
                     className="btn mr-8"
-                    onClick={handleOpen}>
+                    type='submit'>
                     Envoyer
                 </button>
                 <button
@@ -158,19 +175,6 @@ const Contact = () => {
 
         </form>
 
-
-        <Modal
-            open={showModal}
-            aria-describedby="modal-modal-description"
-        >
-            <Box >
-                <Typography
-                    className='modal'
-                    id="modal-modal-description">
-                    Votre message a bien été envoyé.
-                </Typography>
-            </Box>
-        </Modal>
 
 
     </section>

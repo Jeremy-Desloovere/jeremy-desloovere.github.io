@@ -42,10 +42,10 @@ const Portfolio = () => {
                         >
                             <a
                                 className='w-1/2 px-6 py-1   '
-                                href="https://jeremy-desloovere.github.io/" target="_blank" rel="noreferrer">Demo</a>
+                                href="https://jeremy-desloovere.github.io/Curriculum-Vitae/" target="_blank" rel="noreferrer">Demo</a>
                             <a
                                 className='w-1/2 px-6 py-1   '
-                                href="https://github.com/Jeremy-Desloovere/Jeremy-Desloovere.github.io" target="_blank" rel="noreferrer">Code</a>
+                                href="https://github.com/Jeremy-Desloovere/Curriculum-Vitae" target="_blank" rel="noreferrer">Code</a>
                         </CardActions>
                     </Card>
 

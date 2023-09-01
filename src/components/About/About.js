@@ -20,9 +20,13 @@ const About = () => {
           Sécurité opérationnelle, Management, Gestion de données,...), j'ai
           effectué en 2022 une reconversion professionnelle dans un domaine qui
           me passionne depuis des années, le développement web. (Titre
-          professionnel de Développeur Web et Web Mobile obtenu en Juillet 2023)
-          Mon esprit d'analyse et mon appétence pour la programmation et le
-          développement m'ont poussé à faire de cette passion un nouveau métier.
+          professionnel de Développeur Web et Web Mobile obtenu en Juillet
+          2023).
+          <p>
+            Mon esprit d'analyse et mon appétence pour la programmation et le
+            développement m'ont poussé à faire de cette passion un nouveau
+            métier.
+          </p>
         </p>
 
         <Alert color="info" severity="info">

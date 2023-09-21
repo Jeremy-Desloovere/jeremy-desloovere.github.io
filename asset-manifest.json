@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.428eda32.css",
-    "main.js": "/static/js/main.812afa80.js",
+    "main.js": "/static/js/main.be0e3634.js",
     "static/js/787.9b99f8ea.chunk.js": "/static/js/787.9b99f8ea.chunk.js",
     "static/media/work.png": "/static/media/work.c313ef2c5ed283176587.png",
     "static/media/todolist.png": "/static/media/todolist.7086d2b276b0011620f9.png",
@@ -12,7 +12,7 @@
     "static/media/react.png": "/static/media/react.017178568725937f06ca.png",
     "static/media/jobman.png": "/static/media/jobman.6af27cc7d8840dcc5821.png",
     "static/media/html.png": "/static/media/html.a0b3f4cb27d894f228d9.png",
-    "static/media/yafaim.png": "/static/media/yafaim.730c151ea6bdbd663f87.png",
+    "static/media/yafaim.png": "/static/media/yafaim.d788ac883026eeaa58da.png",
     "static/media/cv.png": "/static/media/cv.e0cff5dc35cc10bd5407.png",
     "static/media/bootstrap.png": "/static/media/bootstrap.bcf8a68fc4e6589a8383.png",
     "static/media/semanticui.png": "/static/media/semanticui.a031ab4f119def82390d.png",
@@ -21,11 +21,11 @@
     "static/media/materialui.png": "/static/media/materialui.bd65d625edb776450588.png",
     "index.html": "/index.html",
     "main.428eda32.css.map": "/static/css/main.428eda32.css.map",
-    "main.812afa80.js.map": "/static/js/main.812afa80.js.map",
+    "main.be0e3634.js.map": "/static/js/main.be0e3634.js.map",
     "787.9b99f8ea.chunk.js.map": "/static/js/787.9b99f8ea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.428eda32.css",
-    "static/js/main.812afa80.js"
+    "static/js/main.be0e3634.js"
   ]
 }
